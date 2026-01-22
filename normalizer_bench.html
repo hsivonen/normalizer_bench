@@ -224,7 +224,7 @@ function append(lang, text) {
         });
         data.push({
             label: lang + "_NFC_U",
-            text: asArr(cat("\u2026", text)),
+            text: asArr(cat("\u2014", text)),
         });
         data.push({
             label: lang + "_NFC_U_W",
@@ -237,7 +237,7 @@ function append(lang, text) {
         if (nfd != text) {
             data.push({
                 label: lang + "_NFD_U",
-                text: asArr(cat("\u2026", nfd)),
+                text: asArr(cat("\u2014", nfd)),
             });
             data.push({
                 label: lang + "_NFD_U_W",
